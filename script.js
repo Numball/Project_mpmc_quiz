@@ -1,70 +1,126 @@
-const quizData = [
-    {
-      question: 'KAKA',
-      options: ['sas', 'ds', 'wa', 'sdz'],
-      answer: 'sas',
-    },
-    {
-      question: 'fuas',
-      options: ['jdsas', 'sadka', 'asda', 'saod'],
-      answer: 'saod',
-    },
-    {
-      question: 'suyagd',
-      options: ['bab', 'sda', 'dwa', 'sdaw'],
-      answer: 'sdaw',
-    },
-    {
-      question: 'taws',
-      options: ['sadwas', 'sad', 'bad', 'dad'],
-      answer: 'sadwas',
-    },
-    {
-      question: 'dsawsa',
-      options: ['sdaw', 'wsad', 'dwa', 'wads'],
-      answer: 'wads',
-    },
-    {
-      question: 'Wsad',
-      options: ['as', 'vs', 'we', 'Fe'],
-      answer: 'we',
-    },
-    {
-      question: 'jhgjh',
-      options: ['wreae', 'Vax', 'dsf', 'tyw'],
-      answer: 'tyw',
-    },
-    {
-      question: 'oiajsa',
-      options: ['asdw', 'twe', 'zszd', 'dsa'],
-      answer: 'asdw',
-    },
-    {
-      question: 'wadsa',
-      options: ['rweas', 'tw', 'ws', 'rw'],
-      answer: 'rw',
-    },
-    {
-      question: 'sda',
-      options: ['sdads', 'fe', 'zs', 'sa'],
-      answer: 'zs',
-    },
-    {
-      question:'hello',
-      options: ['bye','he','haha','ka'],
-      answer:'ka',
-    },
-    {
-      question:'jello',
-      options: ['bye','he','haha','ka'],
-      answer:'ka',
-    },
-    {
-      question:'BAHAH',
-      options: ['bye','he','haha','ka'],
-      answer:'ka',
-    }
-  ];
+const quizData=[
+  {
+    "question": "What is the maximum addressable memory in 8086 microprocessor?",
+    "options": ["64 KB", "1 MB", "16 MB", "4 GB"],
+    "answer": "1 MB"
+  },
+  {
+    "question": "Which company introduced the 8086 microprocessor?",
+    "options": ["Intel", "AMD", "Motorola", "IBM"],
+    "answer": "Intel"
+  },
+  {
+    "question": "What is the data bus width of 8086 microprocessor?",
+    "options": ["8 bits", "16 bits", "32 bits", "64 bits"],
+    "answer": "16 bits"
+  },
+  {
+    "question": "What is the clock speed of the original 8086 microprocessor?",
+    "options": ["2 MHz", "4.77 MHz", "1 GHz", "500 MHz"],
+    "answer": "4.77 MHz"
+  },
+  {
+    "question": "Which addressing mode of 8086 allows addition of a constant value to the contents of a register?",
+    "options": ["Register Indirect", "Immediate", "Direct", "Base Register"],
+    "answer": "Immediate"
+  },
+  {
+    "question": "What is the size of the accumulator register in 8051 microcontroller?",
+    "options": ["8 bits", "16 bits", "32 bits", "64 bits"],
+    "answer": "8 bits"
+  },
+  {
+    "question": "In 8051 microcontroller, what is the function of RST 7.5 pin?",
+    "options": ["Reset", "Interrupt", "Power Supply", "Clock Input"],
+    "answer": "Reset"
+  },
+  {
+    "question": "Which type of memory is used for both program and data storage in 8051 microcontroller?",
+    "options": ["RAM", "ROM", "Cache Memory", "Flash Memory"],
+    "answer": "ROM"
+  },
+  {
+    "question": "What is the size of the data bus in 8255 PPI (Programmable Peripheral Interface)?",
+    "options": ["4 bits", "8 bits", "16 bits", "32 bits"],
+    "answer": "8 bits"
+  },
+  {
+    "question": "How many I/O ports are available in 8255 PPI?",
+    "options": ["8", "16", "24", "32"],
+    "answer": "24"
+  },
+  {
+    "question": "Which mode of operation in 8255 PPI allows the I/O ports to function as simple input/output ports?",
+    "options": ["Mode 0", "Mode 1", "Mode 2", "Mode 3"],
+    "answer": "Mode 0"
+  },
+  {
+    "question": "What is the function of the GATE pin in 8254 PIT (Programmable Interval Timer)?",
+    "options": ["Start Timer", "Stop Timer", "Enable/Disable Counting", "Reset Timer"],
+    "answer": "Enable/Disable Counting"
+  },
+  {
+    "question": "How many counters are there in 8254 PIT?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3"
+  },
+  {
+    "question": "What is the maximum number of clock cycles in Mode 2 of 8254 PIT before the output toggles?",
+    "options": ["65536", "32768", "16384", "8192"],
+    "answer": "65536"
+  },
+  {
+    "question": "Which register is used to configure the mode of operation in 8254 PIT?",
+    "options": ["Control Register", "Status Register", "Data Register", "Interrupt Register"],
+    "answer": "Control Register"
+  },
+  {
+    "question": "What is the size of the address bus in 8086 microprocessor?",
+    "options": ["16 bits", "20 bits", "24 bits", "32 bits"],
+    "answer": "20 bits"
+  },
+  {
+    "question": "Which addressing mode of 8086 allows accessing data from a memory location using a base register and an index register?",
+    "options": ["Base-Register Indirect", "Indexed", "Base-Indexed", "Relative"],
+    "answer": "Base-Indexed"
+  },
+  {
+    "question": "In 8051 microcontroller, which register is used for both input and output operations?",
+    "options": ["A Register", "B Register", "D Register", "R Register"],
+    "answer": "A Register"
+  },
+  {
+    "question": "What is the purpose of the ALE pin in 8051 microcontroller?",
+    "options": ["Address Latch Enable", "Data Latch Enable", "Interrupt Enable", "Clock Enable"],
+    "answer": "Address Latch Enable"
+  },
+  {
+    "question": "Which mode of operation in 8254 PIT provides an automatic delay or time measurement?",
+    "options": ["Mode 0", "Mode 1", "Mode 2", "Mode 3"],
+    "answer": "Mode 2"
+  },
+  {
+    "question": "What is the function of the RD and WR signals in 8086 microprocessor?",
+    "options": ["Read and Write Data", "Reset and Wait", "Ready and Wait", "Restart and Write"],
+    "answer": "Ready and Wait"
+  },
+  {
+    "question": "In 8051 microcontroller, which register is used to store the address of the next instruction to be executed?",
+    "options": ["DPTR", "PC", "R0", "ACC"],
+    "answer": "PC"
+  },
+  {
+    "question": "Which type of interrupt has the highest priority in 8051 microcontroller?",
+    "options": ["External Interrupt", "Timer Interrupt", "Serial Interrupt", "Software Interrupt"],
+    "answer": "External Interrupt"
+  },
+  {
+    "question": "What is the purpose of the GND pin in 8255 PPI?",
+    "options": ["Ground", "Data Output", "Clock Input", "Power Supply"],
+    "answer": "Ground"
+  }
+];
+
   
   const quizContainer = document.getElementById('quiz');
   const resultContainer = document.getElementById('result');
